@@ -1,0 +1,110 @@
+.project-detail{
+  // border: 1px solid yellow;
+  // background: gray;
+
+  display: flex;
+  flex-direction: column;
+  width: $wpd-logo-width;
+  height: 100%;
+
+
+  .image{
+    // background: black;
+
+    display: flex;
+    width: 100%;
+    min-height: $wpd-logo-height;
+
+    img{
+      display:block;
+      width:100%;
+      height: 100%;
+    }
+  }
+
+  .data{
+    // border: 1px solid yellow;
+
+    // background: yellow;
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+
+    .data-container{
+      // border: 1px solid purple;
+      display: flex;
+      flex-direction: column;
+      width: 350px;
+      .client_name{
+        // border: 1px solid red;
+        display: flex;
+        height: 25px;
+        margin-top: 32px;
+        align-items: center;
+        p{
+          display: block;
+          background: black;
+          font-family: $box-font;
+          font-size: 14px;
+          text-transform: uppercase;
+          width: fit-content;
+          height: 100%;
+          padding: 2px 10px 0px 10px;
+          margin: 0px;
+        }
+      }
+      .project-name{
+        // border: 1px solid white;
+        display: flex;
+        padding-top: 2px;
+        // height: 16px;
+        h2{
+          font-family: $text-font;
+          font-size: 28px;
+          text-transform: uppercase;
+          margin: 0px;
+          &::selection{
+            color: $work-color;
+            background: $work-text-bg-selection;
+          }
+          @include transition(all $anim-speed);
+          &:hover{
+            color: $work-color;
+            cursor: pointer;
+            background: $work-text-bg;
+          }
+        }
+      }
+      .description{
+        font-family: $box-font;
+        font-size: 12px;
+        line-height: 18px;
+        margin: 3px 0px 0px 0px;
+
+      }
+      .view-more-btn{
+        display: flex;
+        background: transparent;
+        border: 1px solid $button-border-color;
+        border-radius: $border-radius-standard;
+        color: $button-border-color;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: $box-font;
+        font-size: 10px;
+        width: 86px;
+        height: 30px;
+        margin-top:12px;
+        justify-content: center;
+        align-items: center;
+        @include transition(all $anim-speed);
+        &:hover{
+          background: $work-color;
+          border: 1px solid $work-color;
+          color: $work-text;
+        }
+      }
+    }
+  }
+}

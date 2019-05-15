@@ -1,0 +1,121 @@
+// paths
+$media-path:"../media/";
+$img-path: $media-path + "imgs/";
+$video-path: #{$media-path} +"videos/";
+
+$zi-video-bg: 0;
+$zi-bg:1;
+$zi-ui:2;
+$zi-ui-project: 3;
+
+// Color Palette
+$work-color:#ff0080;
+$about-color:#00a9ea;
+$about-color-alpha: #00a9ea5c;
+$contact-color:#ffc300;
+$s1-color:#4e4e4e;
+$s2-color:black;
+$page-bg-color: white;
+$page-secondary-bg-color: #EDEDED;
+$button-border-color: #9E9E9E;
+
+//Fonts
+$text-font: 'd-din_condenseddinCnBd';
+$box-font: 'Roboto Slab', serif;
+
+//page-info-top-bar
+$page-info-top-bar-width: 100vw;
+$page-info-top-bar-height: 40px;
+$page-info-top-bar-top: 22px;
+$logo-width: 130px;
+$logo-height: 40px;
+$logo-left: 42px;
+$logo-space-right: 11px;
+$page-info-top-bar-info-item-space: 5px;
+$page-info-top-bar-info-item-h2-padding: 11px;
+$page-info-top-bar-info-item-h3-padding: $page-info-top-bar-info-item-h2-padding + 2px;
+$page-info-top-bar-info-margin-bottom:38px;
+
+// Content
+// Position absolute
+$main-top: $page-info-top-bar-top + $logo-height + $page-info-top-bar-info-margin-bottom;
+$main-height: calc((100vh - #{$main-top}) - 30px);
+$border-radius-standard: 5px;
+
+// Nav Menu
+$top-tag-color-text: white;
+$work-bg: $work-color;
+$work-text: $top-tag-color-text;
+$work-text-dark: #4F4F4F;
+$work-text-bg: #fad3d6;
+$work-text-bg-selection: #fad3d6fe;
+$about-bg: $about-color;
+$about-text: $top-tag-color-text;
+$contact-bg: $contact-color;
+$contact-text: $top-tag-color-text;
+$s1-bg: $s1-color;
+$s2-bg: $s2-color;
+
+$anim-speed: .3s;
+$menu-width: 360px;
+$menu-height: 120px;
+$menu-logo-size: 48px;
+$menu-bg-color: black;
+$menu-resources-path: '../media/imgs/';
+$menu-idle-icon:'hamburguer.svg';
+$menu-active-icon: 'menu.svg';
+$space-center: ($menu-height - $menu-logo-size) / 2;
+$nav-menu-width: ($menu-width - $menu-height);
+$transform-origin: bottom left;
+$nav-menu-delay-time-2: .3s;
+$nav-menu-animation-time: 1s;
+
+//Nav Menu animation
+$nav-menu-animation-out-frame1-scale: 0.5;
+$nav-menu-animation-out-frame2-scale: 0.5;
+$nav-menu-animation-out-frame3-scale: 0.1;
+
+
+$nav-menu-animation-in-frame1-scale: $nav-menu-animation-out-frame3-scale;
+$nav-menu-animation-in-frame2-scale: $nav-menu-animation-out-frame2-scale;
+$nav-menu-animation-in-frame3-scale: $nav-menu-animation-out-frame1-scale;
+// Right Scroll
+$rs-hover-btn-width: 50px;
+$rs-arrow-width:15px;
+
+
+// Project Item
+$pi-width: 510px;
+$pi-width-ch: 408px;
+$pi-negative-width: 60px;
+$pi-negative-width-ch: -43px;
+
+//Arrow Anim
+$arrow-anim_container-right: 0px;
+$arrow-anim_container-bottom: 0px;
+$arrow-anim_translate_speed: 25s;
+$arrow-anim-color1: $s2-color;
+$arrow-anim-color2: $page-bg-color;
+$arrow-anim-width:  $rs-arrow-width;
+$arrow-anim-height: 100%;
+$arrow-anim-bg_size: 16px;
+$arrow-anim-pattern_size: 1150px;
+$arrow-anim-bg_lines: linear-gradient(45deg, $arrow-anim-color1 25%, $arrow-anim-color2 25%, $arrow-anim-color2 50%, $arrow-anim-color1 50%, $arrow-anim-color1 75%, $arrow-anim-color2 75%, $arrow-anim-color2);
+$arrow-anim-animation: move_lines $arrow-anim_translate_speed linear infinite;
+
+// Break Points
+$laptop-windows: "(min-height: 600px) and (max-height: 700px)";
+$laptop-chica: "(min-height: 400px) and (max-height: 599px)";
+
+
+// Contact
+$our-office-data-width: 220px;
+$our-office-data-icon-width: 26px;
+$form-tooltip-height: 60px;
+
+// Work
+$play-btn-size: 150px;
+
+// Work - project detail
+$wpd-logo-width: 510px;
+$wpd-logo-height: 185px;

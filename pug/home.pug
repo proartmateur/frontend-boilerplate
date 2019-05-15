@@ -1,0 +1,20 @@
+include 2-base/vars.pug
+
+doctype html
+html(lang="es")
+  head
+    meta(charset='utf-8')
+    meta(http-equiv="Content-Language" content="es")
+    meta(name="viewport" content="initial-scale=1, maximum-scale=1")
+    title Title
+    
+    link(rel='stylesheet', href=css_folder+'main.css')
+    include 2-base/fonts.pug  
+  
+  body
+    //-main
+    
+    //-include 4_1-components/_nav-menu.pug
+
+    script(src="./js/vendor/vue.js")
+    script(src="./js/home.js")
